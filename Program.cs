@@ -10,8 +10,10 @@ namespace Quiz
         private const string CONNECTION_STRING = @"Server=localhost,1433;Database=Quiz;User ID=sa;Password=Sh@rk250535; TrustServerCertificate=True";
         static void Main(string[] args)
         {
-            CreateQuestion();
-            // ReadQuestions();
+            Database.Connection = new SqlConnection(CONNECTION_STRING);
+            Database.Connection.Open();
+
+            Database.Connection.Close();
         }
 
         public static void CreateQuestion()

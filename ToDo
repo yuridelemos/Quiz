@@ -1,0 +1,14 @@
+☐ Criar o menu principal
+☐ Criar o inicio do jogo
+☐ Criar as regras do jogo
+☐ Botar uma introdução as categorias
+☐ Botar um aviso que se ele deletar uma categoria, todas as perguntas dela serão deletadas
+☐ Botar um aviso que se ele deletar uma pergunta, todas as respostas dela serão deletadas
+
+Comandos --
+'Cmd/Ctrl+Enter' // Ativa o Todo: Toggle Box
+'Alt+Enter' // Ativa o Todo: Toggle Box
+'Alt+D' // Ativa o Todo: Toggle Done
+'Alt+C' // Ativa o Todo: Toggle Cancelled
+'Alt+S' // Ativa o Todo: Toggle Start
+'Cmd/Ctrl+Shift+A' // Ativa o Todo: Archive
