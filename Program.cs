@@ -2,6 +2,8 @@
 using Dapper;
 using Dapper.Contrib.Extensions;
 using Microsoft.Data.SqlClient;
+using Quiz.Screens;
+using Quiz.Repositories;
 
 namespace Quiz
 {
@@ -12,7 +14,7 @@ namespace Quiz
         {
             Database.Connection = new SqlConnection(CONNECTION_STRING);
             Database.Connection.Open();
-
+            MainMenu.Start();
             Database.Connection.Close();
         }
 

@@ -24,7 +24,7 @@ namespace Quiz.Repositories
                 VALUES (
                     @CategoryId,
                     @Body
-                )";
+                 )";
 
             Database.Connection.Execute(insertSql, new
             {

@@ -1,0 +1,15 @@
+✔ Criar o esboço do menu principal @done(23-04-27 22:11)
+☐ Criar o inicio do jogo
+✔ Criar as regras do jogo @done(23-04-27 22:14)
+✔ Botar uma introdução as categorias @done(23-05-01 22:16)
+✔ Botar um aviso que se ele deletar uma categoria, todas as perguntas dela serão deletadas @done(23-05-01 22:16)
+☐ Botar um aviso que se ele deletar uma pergunta, todas as respostas dela serão deletadas
+☐ Terminar o menu principal fazendo o inicio do jogo
+☐ Criar numerações funcionais: Quando uma matéria da lista for deletada, o próximo insert ficar com a numeração correta
+Comandos --
+'Cmd/Ctrl+Enter' // Ativa o Todo: Toggle Box
+'Alt+Enter' // Ativa o Todo: Toggle Box
+'Alt+D' // Ativa o Todo: Toggle Done
+'Alt+C' // Ativa o Todo: Toggle Cancelled
+'Alt+S' // Ativa o Todo: Toggle Start
+'Cmd/Ctrl+Shift+A' // Ativa o Todo: Archive

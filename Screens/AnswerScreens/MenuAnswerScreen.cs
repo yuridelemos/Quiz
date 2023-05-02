@@ -7,7 +7,7 @@ namespace Quiz.Screens.AnswerScreens
 {
     public class MenuAnswerScreen
     {
-        public void Load()
+        public static void Load()
         {
             System.Console.WriteLine("Funcionou");
         }
