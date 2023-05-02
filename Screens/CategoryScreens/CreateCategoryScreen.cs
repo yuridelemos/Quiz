@@ -1,4 +1,3 @@
-using Dapper;
 using Quiz.Models;
 using Quiz.Repositories;
 
@@ -9,7 +8,7 @@ namespace Quiz.Screens.CategoryScreens
         public static void Load()
         {
             Console.Clear();
-            Console.WriteLine("Nova Categoria");
+            Console.WriteLine("Nova categoria");
             Console.WriteLine("-------------");
             Console.Write("Nome: ");
             var matter = Console.ReadLine();

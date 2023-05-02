@@ -3,9 +3,18 @@
 ✔ Criar as regras do jogo @done(23-04-27 22:14)
 ✔ Botar uma introdução as categorias @done(23-05-01 22:16)
 ✔ Botar um aviso que se ele deletar uma categoria, todas as perguntas dela serão deletadas @done(23-05-01 22:16)
+✔ Question List colocar opção para GET categoria específica ou Get ALL @done(23-05-02 16:54)
+☐ Question Create obrigando a já colocar as respostas
 ☐ Botar um aviso que se ele deletar uma pergunta, todas as respostas dela serão deletadas
+☐ Colocar o adicionar questão no CreationQuestionScreen
+☐ Colocar o adicionar questão no UpdateQuestionScreen
 ☐ Terminar o menu principal fazendo o inicio do jogo
 ☐ Criar numerações funcionais: Quando uma matéria da lista for deletada, o próximo insert ficar com a numeração correta
+☐ Checar se todas as classes de BD possuem Try Catch
+
+
+
+
 Comandos --
 'Cmd/Ctrl+Enter' // Ativa o Todo: Toggle Box
 'Alt+Enter' // Ativa o Todo: Toggle Box

@@ -9,7 +9,7 @@ namespace Quiz.Screens.CategoryScreens
         public static void Load()
         {
             Console.Clear();
-            Console.WriteLine("Gestão de Categorias");
+            Console.WriteLine("Gestão de categorias");
             Console.WriteLine("--------------");
             List();
             Console.WriteLine();
