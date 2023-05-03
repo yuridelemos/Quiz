@@ -35,7 +35,7 @@ namespace Quiz.Screens.QuestionScreens
             }
         }
 
-        internal static int List2()
+        internal static int ListWithReturn()
         {
             System.Console.WriteLine("Selecione a categoria de questões que deseja ver.");
             ListCategoryScreen.List();

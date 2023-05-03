@@ -14,7 +14,7 @@ namespace Quiz.Screens.QuestionScreens
             Console.Clear();
             Console.WriteLine("Atualizar questão");
             Console.WriteLine("-------------");
-            ListQuestionScreen.List();
+            var categoryId = ListQuestionScreen.ListWithReturn();
             System.Console.WriteLine("Caso não queira mais, basta apertar ENTER duas vezes.");
             System.Console.WriteLine();
 
@@ -23,7 +23,7 @@ namespace Quiz.Screens.QuestionScreens
             Console.Write("Questão: ");
             var body = Console.ReadLine();
 
-            var categoryId = ListQuestionScreen.List2();
+
             Update(new Question
             {
                 Id = int.Parse(id),
@@ -41,6 +41,8 @@ namespace Quiz.Screens.QuestionScreens
                 var repository = new Repository<Question>();
                 repository.Update(question);
                 Console.WriteLine("Questão atualizada com sucesso!");
+                System.Console.WriteLine("Você deseja atualizar as respostas dessa pergunta?");
+                // atualizar as respostas
             }
             catch (Exception ex)
             {

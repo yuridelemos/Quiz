@@ -28,7 +28,7 @@ namespace Quiz.Screens.QuestionScreens
                     UpdateQuestionScreen.Load();
                     break;
                 case 4:
-                    // DeleteQuestionScreen.Load();
+                    DeleteQuestionScreen.Load();
                     break;
                 default:
                     System.Console.WriteLine("Opção digitada inválida, pressione qualquer tecla para retornar ao menu.");

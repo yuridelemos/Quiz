@@ -5,6 +5,9 @@
 ✔ Botar um aviso que se ele deletar uma categoria, todas as perguntas dela serão deletadas @done(23-05-01 22:16)
 ✔ Question List colocar opção para GET categoria específica ou Get ALL @done(23-05-02 16:54)
 ☐ Question Create obrigando a já colocar as respostas
+☐ Category Delete deletando todas as perguntas antes de deletar a categoria
+☐ Question Delete deletando todas as respostas antes de deletar a pergunta
+☐ Answer Delete deletando a resposta e solicitando que é necessário colocar outra no lugar (utilizar aquela ferramenta de voltar o insert do balta, se possível)
 ☐ Botar um aviso que se ele deletar uma pergunta, todas as respostas dela serão deletadas
 ☐ Colocar o adicionar questão no CreationQuestionScreen
 ☐ Colocar o adicionar questão no UpdateQuestionScreen
