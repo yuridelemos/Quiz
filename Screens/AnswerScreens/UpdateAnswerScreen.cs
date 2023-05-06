@@ -28,6 +28,8 @@ namespace Quiz.Screens.AnswerScreens
 
             Update(new Answer
             {
+                QuestionId = questionId,
+                AnswerOrder = int.Parse(answerOrder),
                 Body = newBody
             });
             Console.ReadKey();
@@ -38,7 +40,14 @@ namespace Quiz.Screens.AnswerScreens
         {
             try
             {
-                var repository = new Repository<Answer>();
+                if (answer.RightAnswer == true)
+                {
+                    System.Console.WriteLine("Não é possível alterar a resposta correta.");
+                    Thread.Sleep(2000);
+                    Load();
+                }
+                System.Console.WriteLine("Teste");
+                var repository = new AnswerRepository();
                 repository.Update(answer);
                 Console.WriteLine("Resposta atualizada com sucesso!");
             }

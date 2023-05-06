@@ -16,14 +16,17 @@ namespace Quiz.Screens.AnswerScreens
             Console.Clear();
             Console.WriteLine("Deletar categoria");
             Console.WriteLine("-------------");
-            System.Console.WriteLine("OBS: Ao deletar uma categoria, irá deletar todas as perguntas presentes nela.");
+            System.Console.WriteLine(@"OBS: Ao deletar uma resposta, não será possível recuperação. Não é possível deletar
+            a resposta correta, caso haja algum erro de escrita ou por outro motivo desejar a editar, use a opção de alteração.");
+            System.Console.WriteLine(@"OBS: Ao deletar uma resposta, você será obrigado logo em seguida a cadastrar uma
+            nova resposta. Essa obrigação se deve que todas as perguntas presentes devem conter CINCO opções de respostas.");
             System.Console.WriteLine("Caso não queira mais, basta apertar ENTER duas vezes.");
             ListQuestionScreen.List();
             System.Console.WriteLine();
-            Console.Write("ID: ");
+            Console.Write("ID Pergunta: ");
             var questionId = Console.ReadLine();
 
-            Console.Write("Nome: ");
+            Console.Write("ID Resposta: ");
             var answerOrder = Console.ReadLine();
 
 
@@ -40,13 +43,15 @@ namespace Quiz.Screens.AnswerScreens
         {
             try
             {
+                if (answer.RightAnswer == true)
+                    Load();
                 System.Console.WriteLine($"Você tem certeza que deseja deletar essa resposta: {answer.Body}?");
                 System.Console.WriteLine("'S' para SIM e 'N' para NÃO");
                 var option = Console.ReadLine();
                 if (option.ToUpper() == "S")
                 {
                     var repository = new Repository<Answer>();
-                    repository.Delete(answer);
+                    repository.Delete(answer); // Está deletando todas as respostas
                     Console.WriteLine("Categoria deletada com sucesso!");
                 }
                 Load();

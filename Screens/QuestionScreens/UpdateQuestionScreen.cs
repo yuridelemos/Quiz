@@ -20,7 +20,7 @@ namespace Quiz.Screens.QuestionScreens
 
             Console.Write("ID: ");
             var id = Console.ReadLine();
-            Console.Write("Questão: ");
+            Console.Write("Escreva a nova questão: ");
             var body = Console.ReadLine();
 
 
