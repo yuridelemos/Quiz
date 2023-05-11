@@ -50,7 +50,7 @@ namespace Quiz.Screens.CategoryScreens
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Não foi possível deletada a categoria");
+                Console.WriteLine("Não foi possível deletar categoria");
                 Console.WriteLine(ex.Message);
             }
         }

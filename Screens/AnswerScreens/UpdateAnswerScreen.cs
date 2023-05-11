@@ -8,9 +8,6 @@ namespace Quiz.Screens.AnswerScreens
     {
         public static void Load()
         {
-            // Primeiro é necessário puxar a escolha de resposta
-            // depois puxar todas as perguntas, selecionar as perguntas
-            // e depois irá mostrar as respostas.
             Console.Clear();
             Console.WriteLine("Atualizar resposta");
             Console.WriteLine("-------------");
@@ -40,13 +37,15 @@ namespace Quiz.Screens.AnswerScreens
         {
             try
             {
-                if (answer.RightAnswer == true)
+                if (CheckCorrectAnswer.CheckAnswer(answer.QuestionId) == answer.AnswerOrder)
                 {
-                    System.Console.WriteLine("Não é possível alterar a resposta correta.");
-                    Thread.Sleep(2000);
-                    Load();
+                    System.Console.WriteLine("Aviso!: Você está alterando a resposta correta!");
+                    System.Console.WriteLine("Deseja continuar?");
+                    System.Console.WriteLine("'S' para SIM e 'N' para NÃO");
+                    var option = Console.ReadLine();
+                    if (option.ToUpper() == "N")
+                        Load();
                 }
-                System.Console.WriteLine("Teste");
                 var repository = new AnswerRepository();
                 repository.Update(answer);
                 Console.WriteLine("Resposta atualizada com sucesso!");

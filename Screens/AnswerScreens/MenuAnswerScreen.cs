@@ -15,8 +15,8 @@ namespace Quiz.Screens.AnswerScreens
             Console.WriteLine("O que deseja fazer?");
             Console.WriteLine();
             Console.WriteLine("1 - Atualizar resposta");
-            Console.WriteLine("2 - Excluir resposta");
-            Console.WriteLine();
+            Console.WriteLine("2 - Por que apenas posso apenas atualizar resposta?");
+            Console.Write("-----------------: ");
             var option = short.Parse(Console.ReadLine());
 
             switch (option)
@@ -25,10 +25,7 @@ namespace Quiz.Screens.AnswerScreens
                     UpdateAnswerScreen.Load();
                     break;
                 case 2:
-                    DeleteAnswerScreen.Load();
-                    break;
-                case 3:
-                    ListAnswerScreen.List();
+                    RuleAnswerScreen.Load();
                     break;
                 default:
                     System.Console.WriteLine("Opção digitada inválida, pressione qualquer tecla para retornar ao menu.");
@@ -39,7 +36,3 @@ namespace Quiz.Screens.AnswerScreens
         }
     }
 }
-/*
- * Atualizar e excluir - Avisar qual é a resposta correta para que a pessoa não delete ou
- atualize ela de forma incorreta.
- */

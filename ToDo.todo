@@ -4,15 +4,15 @@
 ✔ Botar uma introdução as categorias @done(23-05-01 22:16)
 ✔ Botar um aviso que se ele deletar uma categoria, todas as perguntas dela serão deletadas @done(23-05-01 22:16)
 ✔ Question List colocar opção para GET categoria específica ou Get ALL @done(23-05-02 16:54)
-☐ Answer Update demonstrar qual é a resposta correta
-☐ Answer Delete demonstrar qual é a resposta correta
-☐ Answer Delete colocar aviso que quando for deletar uma resposta, será necessário colocar outra no lugar
-☐ Answer Delete deletando a resposta e solicitando que é necessário colocar outra no lugar 
+✔ Answer Update demonstrar qual é a resposta correta @done(23-05-07 17:12)
+✘ Answer Delete demonstrar qual é a resposta correta @cancelled(23-05-10 22:23)
+✘ Answer Delete colocar aviso que quando for deletar uma resposta, será necessário colocar outra no lugar @cancelled(23-05-10 22:23)
+✘ Answer Delete deletando a resposta e solicitando que é necessário colocar outra no lugar @cancelled(23-05-10 22:23)
 (utilizar aquela ferramenta de voltar o insert do balta, se possível) ou enviar para o banco de dados só depois
 que a pessoa já digitou a nova resposta e demonstrar mudança
 Questão antiga: XXXX -> Questão nova: YYYYY
 ☐ Question Create obrigando a já colocar as respostas
-☐ Question Delete deletando todas as respostas antes de deletar a pergunta
+✔ Question Delete deletando todas as respostas antes de deletar a pergunta @done(23-05-10 22:23)
 ☐ Question Update testar se ele funciona sem o ListWithReturn utilizando apenas o Id e sem o CategoryId
 ☐ Category Delete deletando todas as perguntas antes de deletar a categoria
 ☐ Botar um aviso que se ele deletar uma pergunta, todas as respostas dela serão deletadas

@@ -1,5 +1,6 @@
 using Quiz.Models;
 using Quiz.Repositories;
+using Quiz.Screens.AnswerScreens;
 
 namespace Quiz.Screens.QuestionScreens
 {
@@ -38,16 +39,21 @@ namespace Quiz.Screens.QuestionScreens
                 var option = Console.ReadLine();
                 if (option.ToUpper() == "S")
                 {
+                    DeleteAnswerScreen.DeleteAll(new Answer
+                    {
+                        QuestionId = question.Id
+                    });
                     //Implantar Delete das respostas antes
                     var repository = new Repository<Question>();
                     repository.Delete(question);
                     Console.WriteLine("Questão deletada com sucesso!");
+                    Thread.Sleep(2000);
                 }
                 Load();
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Não foi possível deletada a questão");
+                Console.WriteLine("Não foi possível deletar questão");
                 Console.WriteLine(ex.Message);
             }
         }
