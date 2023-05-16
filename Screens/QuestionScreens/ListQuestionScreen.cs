@@ -35,7 +35,7 @@ namespace Quiz.Screens.QuestionScreens
             }
         }
 
-        internal static int ListWithReturn()
+        internal static int ListWithCategoryReturn()
         {
             System.Console.WriteLine("Selecione a categoria de questões que deseja ver.");
             ListCategoryScreen.List();
@@ -52,6 +52,18 @@ namespace Quiz.Screens.QuestionScreens
                     Console.WriteLine($"{item.Id} - {item.Body}");
             }
             return option;
+        }
+
+        internal static int ListWithNumberQuestionReturn(string question)
+        {
+            var repository = new Repository<Question>();
+            var questions = repository.Get();
+            foreach (var item in questions)
+            {
+                if (item.Body.Contains(question))
+                    return item.Id;
+            }
+            return 0;
         }
     }
 }

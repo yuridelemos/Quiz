@@ -14,16 +14,17 @@ Questão antiga: XXXX -> Questão nova: YYYYY
 ☐ Question Create obrigando a já colocar as respostas
 ✔ Question Delete deletando todas as respostas antes de deletar a pergunta @done(23-05-10 22:23)
 ☐ Question Update testar se ele funciona sem o ListWithReturn utilizando apenas o Id e sem o CategoryId
-☐ Category Delete deletando todas as perguntas antes de deletar a categoria
+✔ Category Delete deletando todas as perguntas antes de deletar a categoria @done(23-05-11 15:28)
 ☐ Botar um aviso que se ele deletar uma pergunta, todas as respostas dela serão deletadas
 ☐ Colocar o adicionar questão no CreationQuestionScreen
 ☐ Colocar o adicionar questão no UpdateQuestionScreen
 ☐ Terminar o menu principal fazendo o inicio do jogo
 ☐ Criar numerações funcionais: Quando uma matéria da lista for deletada, o próximo insert ficar com a numeração correta
 ☐ Checar se todas as classes de BD possuem Try Catch
-
-
-
+✔ Terminar Answer @done(23-05-11 15:30)
+☐ Terminar Question
+☐ Terminar Category
+☐ Ajeitar a numeração ID do BD automaticamente.
 
 Comandos --
 'Cmd/Ctrl+Enter' // Ativa o Todo: Toggle Box

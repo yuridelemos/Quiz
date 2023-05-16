@@ -14,7 +14,7 @@ namespace Quiz.Screens.QuestionScreens
             Console.Clear();
             Console.WriteLine("Atualizar questão");
             Console.WriteLine("-------------");
-            var categoryId = ListQuestionScreen.ListWithReturn();
+            var categoryId = ListQuestionScreen.ListWithCategoryReturn();
             System.Console.WriteLine("Caso não queira mais, basta apertar ENTER duas vezes.");
             System.Console.WriteLine();
 

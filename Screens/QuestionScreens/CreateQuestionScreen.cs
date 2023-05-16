@@ -1,5 +1,6 @@
 using Quiz.Models;
 using Quiz.Repositories;
+using Quiz.Screens.AnswerScreens;
 using Quiz.Screens.CategoryScreens;
 
 namespace Quiz.Screens.QuestionScreens
@@ -11,6 +12,7 @@ namespace Quiz.Screens.QuestionScreens
             Console.Clear();
             Console.WriteLine("Nova questão");
             Console.WriteLine("-------------");
+            System.Console.WriteLine("Ao criar uma nova questão, será obrigado logo em seguida a colocação das 5 alternativas de respostas.");
             ListCategoryScreen.List();
             Console.Write("Categoria da questão: ");
             var categoryId = short.Parse(Console.ReadLine());
@@ -33,7 +35,11 @@ namespace Quiz.Screens.QuestionScreens
             {
                 var repository = new Repository<Question>();
                 repository.Insert(question);
-                // Fazer a criação de respostas
+                for (int i = 0; i < 5; i++)
+                {
+                    var count = 1;
+                    CreateAnswerScreen.Load(question.Body, count);
+                }
                 Console.WriteLine("Questão cadastrada com sucesso!");
             }
             catch (Exception ex)
