@@ -15,7 +15,7 @@ Questão antiga: XXXX -> Questão nova: YYYYY
 ✔ Question Delete deletando todas as respostas antes de deletar a pergunta @done(23-05-10 22:23)
 ☐ Question Update testar se ele funciona sem o ListWithReturn utilizando apenas o Id e sem o CategoryId
 ✔ Category Delete deletando todas as perguntas antes de deletar a categoria @done(23-05-11 15:28)
-☐ Botar um aviso que se ele deletar uma pergunta, todas as respostas dela serão deletadas
+✘ Botar um aviso que se ele deletar uma pergunta, todas as respostas dela serão deletadas @cancelled(23-05-26 17:17)
 ☐ Colocar o adicionar questão no CreationQuestionScreen
 ☐ Colocar o adicionar questão no UpdateQuestionScreen
 ☐ Terminar o menu principal fazendo o inicio do jogo
@@ -25,7 +25,7 @@ Questão antiga: XXXX -> Questão nova: YYYYY
 ☐ Terminar Question
 ☐ Terminar Category
 ☐ Ajeitar a numeração ID do BD automaticamente.
-
+☐ Checar onde pode diminuir as redundâncias. Exemplo: Dois deletes question por conta da pergunta de certeza, mas que pode mudar para haver apenas um.
 Comandos --
 'Cmd/Ctrl+Enter' // Ativa o Todo: Toggle Box
 'Alt+Enter' // Ativa o Todo: Toggle Box
