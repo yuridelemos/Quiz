@@ -1,3 +1,4 @@
+using System.Globalization;
 using Quiz.Models;
 using Quiz.Repositories;
 using Quiz.Screens.CategoryScreens;
@@ -50,17 +51,16 @@ namespace Quiz.Screens.QuestionScreens
       return option;
     }
 
-    internal static int ListWithNumberQuestionReturn(string question)
+    internal static int ListWithNumberQuestionReturn(Question question)
     {
       var repository = new Repository<Question>();
       var questions = repository.Get();
-      foreach (var item in questions)
-      {
-        if (item.Body.Contains(question))
-          return item.Id;
-      }
-      return 0;
+
+      var lastIndex = questions.Last();
+
+      return lastIndex.Id;
     }
+
 
     internal static List<Question> ListForDelete(Question question)
     {

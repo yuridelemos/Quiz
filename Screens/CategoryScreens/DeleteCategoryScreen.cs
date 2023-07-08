@@ -11,11 +11,16 @@ namespace Quiz.Screens.CategoryScreens
     // perguntar se ele tem certeza
     public static void Load()
     {
+      System.Console.WriteLine("-----DELETAR CATEGORIA-----");
+      System.Console.WriteLine("(1) - Deletar categoria");
+      System.Console.WriteLine("(0) - Voltar");
+      System.Console.WriteLine("OBS: Ao deletar uma categoria, todas as perguntas presentes nela serão deletadas.");
+      var option = int.Parse(Console.ReadLine());
+      if (option == 0)
+        MenuCategoryScreen.Load();
       Console.Clear();
       Console.WriteLine("Deletar categoria");
       Console.WriteLine("-------------");
-      System.Console.WriteLine("OBS: Ao deletar uma categoria, irá deletar todas as perguntas presentes nela.");
-      System.Console.WriteLine("Caso não queira mais, basta apertar ENTER duas vezes.");
       ListCategoryScreen.List();
       System.Console.WriteLine();
       System.Console.WriteLine("Escreva o ID e Nome para prosseguir.");

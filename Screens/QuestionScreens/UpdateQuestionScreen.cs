@@ -11,12 +11,16 @@ namespace Quiz.Screens.QuestionScreens
     // para o menu
     public static void Load()
     {
+      System.Console.WriteLine("-----ATUALIZAR QUESTÃO-----");
+      System.Console.WriteLine("(1) - Atualizar questão");
+      System.Console.WriteLine("(0) - Voltar");
+      var option = int.Parse(Console.ReadLine());
+      if (option == 0)
+        MenuQuestionScreen.Load();
       Console.Clear();
       Console.WriteLine("Atualizar questão");
       Console.WriteLine("-------------");
       var categoryId = ListQuestionScreen.ListWithReturn();
-      System.Console.WriteLine("Caso não queira mais, basta apertar ENTER duas vezes.");
-      System.Console.WriteLine();
 
       Console.Write("ID: ");
       var id = Console.ReadLine();

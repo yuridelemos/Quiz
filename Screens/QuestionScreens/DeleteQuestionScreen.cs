@@ -8,12 +8,16 @@ namespace Quiz.Screens.QuestionScreens
   {
     public static void Load()
     {
+      System.Console.WriteLine("-----DELETAR QUESTÃO-----");
+      System.Console.WriteLine("(1) - Deletar questão");
+      System.Console.WriteLine("(0) - Voltar");
+      var option = int.Parse(Console.ReadLine());
+      System.Console.WriteLine("OBS: Ao deletar uma questão, irá deletar todas as respostas presentes nela.");
+      if (option == 0)
+        MenuQuestionScreen.Load();
       Console.Clear();
       Console.WriteLine("Deletar questão");
       Console.WriteLine("-------------");
-      System.Console.WriteLine("OBS: Ao deletar uma questão, irá deletar todas as respostas presentes nela.");
-      System.Console.WriteLine("Caso não queira mais, basta apertar ENTER duas vezes.");
-      System.Console.WriteLine();
 
       ListQuestionScreen.ListWithoutReturn();
 
@@ -34,7 +38,7 @@ namespace Quiz.Screens.QuestionScreens
     {
       try
       {
-        System.Console.WriteLine($"Você tem certeza que deseja deletar essa questão: {question.Body}?");
+        System.Console.WriteLine($"Você tem certeza que deseja deletar essa questão?");
         System.Console.WriteLine("'S' para SIM e 'N' para NÃO");
         var option = Console.ReadLine();
         if (option.ToUpper() == "S")

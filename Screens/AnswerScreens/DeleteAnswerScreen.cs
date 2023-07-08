@@ -11,7 +11,7 @@ namespace Quiz.Screens.AnswerScreens
             try
             {
                 var repository = new AnswerRepository();
-                repository.Delete(answer); // Está deletando todas as respostas
+                repository.Delete(answer);
             }
             catch (Exception ex)
             {
